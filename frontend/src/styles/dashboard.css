@@ -1,0 +1,120 @@
+/* dashboard.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.dashboard-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width of the dashboard */
+    margin: 0 auto; /* Center the dashboard on the page */
+}
+  
+.columns-container {
+    display: flex; /* Use Flexbox for the columns */
+    gap: 20px; /* Add s pacing between the columns */
+    width: 100%; /* Ensure the container takes full width */
+}
+  
+.left-column {
+    flex: 2; /* Takes 2/3 of the available space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between PromptInput and ModelOutputs */
+}
+  
+.right-column {
+    flex: 1; /* Takes 1/3 of the available space */
+}
+.tile {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    width: 100%; /* Ensure the tile takes the full width of its container */
+    margin-bottom: 16px; /* Add some spacing between tiles */
+  }
+  
+  .tile h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    text-align: left    ;
+  }
+  
+  .tile button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .tile button:hover {
+    background-color: #0056b3;
+  }
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+.inputPrompt {
+    width: 100%;
+    height: 250px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.outputBox {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none; /* Prevent manual resizing */
+    overflow-y: hidden; /* Hide scrollbar */
+    min-height: 40px; /* Minimum height (one line) */
+    box-sizing: border-box;
+  }
+
+/* dashboard.css */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Add spacing between stat items */
+    max-height: 300px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 8px; /* Add some padding to prevent scrollbar overlap */
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee; /* Add a separator between items */
+    font-size: 90%;
+  }
+  
+  .stat-key {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stat-value {
+    color: #666;
+  }
