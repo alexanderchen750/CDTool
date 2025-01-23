@@ -4,7 +4,8 @@ import PromptInput from '../components/promptInput';
 import ModelMenu from '../components/modelMenu';
 import ModelOutputs from '../components/ModelOutputs';
 import OutputStats from '../components/OutputStats';
-import GrammarTree from '../components/GrammarTree';
+//import GrammarTree from '../components/GrammarTree';
+import ParseTree from '../components/ParseTree';
 
 const Dashboard = () => {
   const [outputValue, setOutputValue] = useState(''); // State for output value
@@ -37,7 +38,8 @@ const Dashboard = () => {
         <div className="left-column">
           <PromptInput onGenerate={handleGenerate} />
           <ModelOutputs outputValue={outputValue} />
-          <GrammarTree/>
+          {/*<GrammarTree/>*/}
+          <ParseTree/>
         </div>
 
         {/* Right Column: ModelMenu */}

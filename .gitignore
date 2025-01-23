@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+backend_venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
